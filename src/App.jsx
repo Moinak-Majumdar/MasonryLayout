@@ -1,22 +1,12 @@
-import './App.css'
+import Background from "./components/Background"
+import ImgGrid from "./components/ImgGrid"
 
 function App() {
-
   return (
-    <>
-      <div id='main-box' className='columns-1 md:columns-2 lg:columns-3 xl:columns-4 w-full my-5 mx-auto gap-x-5'>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/200/400" alt="" /></div>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/300/600" alt="" /></div>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/200/500" alt="" /></div>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/600/400" alt="" /></div>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/200/600" alt="" /></div>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/200/800" alt="" /></div>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/300/500" alt="" /></div>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/400/300" alt="" /></div>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/500/200" alt="" /></div>
-        <div className='w-full break-inside-avoid mb-2'><img className='w-full rounded-xl' src="https://picsum.photos/600/300" alt="" /></div>
-      </div>
-    </>
+    <main className="px-4 md:px-10 lg:px-16 xl:px-36 2xl:px-44 min-h-screen flex bg-slate-800">
+      <ImgGrid />
+      <Background />
+    </main>
   )
 }
 
